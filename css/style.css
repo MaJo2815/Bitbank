@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+	--color-negro:#000;
+	--color-texto:#666;
+	--color-titulos:#333;
+	--color-subtitulos:#888;
+	--bg-gris:#f2f4ec;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: var(--color-texto);
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Khula', sans-serif;
+	color: var(--color-titulos);
+}
+header{
+    background-color: transparent;
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid #525252;
+}
+.section{
+	padding:10% 0;
+}
+
+.header-area.sticky {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+	transition: 0.3s all ease;
+}
+.header-area.sticky .navbar-light{
+	background-color: #fff !important;
+}
+
+.header-area.sticky .navbar-light .navbar-nav .nav-link{
+	color: #000;
+}
+
+header img:nth-child(2), .header-area.sticky img:nth-child(1){
+	display: none;
+}
+
+.header-area.sticky img:nth-child(2), header img:nth-child(1){
+	display: block;
+}
+
+.header-area.sticky{
+	border-bottom: none;
+}
+#hero{
+	background-image: url("../img/bg2.jpg");
+	background-position: top center;
+	background-size: cover;
+	color: #fff;
+}
+#hero h4{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #fff;
+}
+#hero h1{
+	font-size: 85px;
+	font-weight: 800;
+	color: #fff;
+}
+#hero h3{
+	font-size: 22px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#hero h1, #hero h4, #hero h3{
+	color: #fff;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.70);
+	padding: 25% 0;
+	
+}
+
+.btn-warning{
+	border-radius: 0;
+	padding: 15px 30px !important;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+
+.titulo{
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.titulo::after{
+	content: '';
+	display: block;
+	border-bottom: 1px solid #638D38;
+	width: 50px;
+	margin: 20px auto;
+}
+.subtitulo{
+	color: var(--color-subtitulos);
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+#services i{
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 100%;
+	border: 1px solid #ddd;
+	font-size: 60px;
+	margin: 40px 0;
+	color: #000;
+	transition: all 0.3s ease-in-out;
+}
+
+#services article:nth-child(2) i {
+	background-color: #ffc000;
+}
+
+.naranja {
+	background-color: #ffc000;
+}
+
+#services h3{
+	font-size: 22px;
+}
+
+#services a{
+	color: var(--color-titulos);
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#services article:hover i {
+	background-color: #ffc000;
+	transition: all 0.4s ease-in-out;
+}
+
+#services article:hover a {
+	color: #ffc000;
+	text-decoration: underline;
+}
+
+.text-about {
+	background-color: #ffc000;
+}
+
+#about .subtitulo {
+	color: #fff;
+}
+
+.circulo {
+	background-color: #FFC000;
+	border-radius: 100%;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	line-height: 100px;
+	border: 3px solid #fff;
+}
+
+.circulo img {
+	width: 50px;
+}
+
+.iconos-about {
+	text-align: center;
+	padding: 0 10% 5%;
+	margin-top: -50px;
+}
+
+.iconos-about h3{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 25px 0 5px 0;
+}
+
+#features {
+	background-color: #f2f4ec;
+}
+
+#features .subtitulo {
+	margin-bottom: 8%;
+}
+
+#features h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#numbers {
+	background-image: url("../img/parallax-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+#numbers h3{
+	color: #fff;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+#numbers h4{
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+#numbers i{
+	font-size: 60px;
+	padding-bottom: 10%;
+	color:#FFC107;
+}
+
+.t-card {
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 25px 30px;
+	border-radius: 15px;
+}
+
+.t-card img {
+	border-radius: 100%;
+	margin-bottom: 25px;
+	border: 5px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.t-card h4 {
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.t-card p {
+	color: var(--color-titulos);
+	font-size: 16px;
+}
+
+.t-card i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #FFC107;
+	border-radius: 100%;
+	color: #FFC107;
+}
+
+.t-card:hover img{
+	border: 5px solid #FFC107;
+	transition: all 0.3s ease-in-out;
+}
+
+.t-card:hover i{
+	background-color: #FFC107;
+	color: #fff;
+}
+
+.t-card:hover {
+	box-shadow: 0px 0px 10px 2px #ddd;
+}
+
+#contact {
+	background-color: var(--bg-gris);
+}
+
+footer {
+	background-color: #1a2130;
+	padding: 30px 0;
+	color: #adadad;
+	text-align: center;
+}
